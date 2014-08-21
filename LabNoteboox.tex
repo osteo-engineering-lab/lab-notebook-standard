@@ -1,0 +1,106 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+
+% --------------------------------------- Packages -----------------------------------------
+
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+	\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+	%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+\usepackage{lipsum}					% For including random text.
+\usepackage{circuitikz}				% For building circuit diagrams.
+
+% --------------------------------------- Path Setting -----------------------------------------
+\graphicspath{{./Figures/}}				 % Allows you to store figures in a subdirectory in the same directory as you tex file (note the trailing / is required), this is RELATIVE addressing. Absolute paths are also possible (e.g. \graphicspath{{/var/lib/images/}}) as are multiple paths (e.g. \graphicspath{{images_folder/}{other_folder/}{third_folder/}}).
+
+% --------------------------------------- Title Matter -----------------------------------------
+
+\title{Dean Lab Notebook Formatting}
+\author{Lexi Cantu}
+\date{2014-08-20}					% Activate to display a given date or no date
+
+% --------------------------------------- Begin Document -----------------------------------------
+
+\begin{document}
+\maketitle 							% Places title matter
+
+\tableofcontents{}					% Places table of contents
+
+% --------------------------------------- Introduction -----------------------------------------
+
+\section*{Introduction}	
+All lab notebooks are legal documents, and property of Dean Lab. Notebooks should remain in the Biomedical Research Tower when not in use. In order to ensure they can be accurately referenced in the present and future, consistent formatting and labeling conventions are necessary. This document is intended to provide a complete guide to properly setting up and maintaining a lab notebook for Dean Lab.
+
+\addcontentsline{toc}{section}{Introduction}	% Unnumbered sections are not included in table of contents automatically without this line
+
+% --------------------------------------- Section 1 -----------------------------------------
+
+\section{Front Cover}					% Creates a numbered section
+
+
+\normalsize									% Make text normal size
+\subsection[Lined Portion]{Lined Portion}
+
+The following information should be clearly printed in permanent marker or pen on the lined portion of the white box on the front cover of the lab notebook.
+\begin{itemize}
+	\item Your full first and last name
+	\item Address of the lab; 460 W. 12th Ave. Rm. 1009a Columbus OH, 43210
+	\item Your serial number 
+	\item Your personal phone number
+\end{itemize}
+
+
+\subsection[Sticker]{Sticker}	
+
+The Dean Lab sticker
+
+\subsection[Serial Number Convention]{Serial Number Convention}		% Creates a numbered subsection, but changes what is included in table of contents
+								
+
+% --------------------------------------- Section 2 -----------------------------------------
+
+		% Creates a numbered section	% Creates a numbered subsection
+\section{Numbering}
+
+Every page of the lab notebook must be numbered in the upper right hand corner of the page. The first page containing an entry should be numbered '1.' Each page (note including back sides of pages) after that should be labeled 2, 3, 4... etc. through the end of the notebook. All pages before the pages with data entries should be labeled with lowercase roman numerals. 
+
+\section{Table of Contents}
+
+The first page of the lab notebook should be titled "Table of Contents." Entries regarding the same project or subject can be referenced in whole in this table. For example: if a mock sol fraction test was completed, the pages containing the protocol planning, data collection, observations and data analysis can all be recorded in this table as "Mock Sol Fraction Test." Any particularly important figures, data sets, or notes should also be distinguished in this table. Writing on the backs of pages is acceptable in this section.
+
+\section{List of Abbreviations}
+
+The second through fourth pages of the lab notebook should be reserved for defining any abbreviations used in the lab notebook. Abbreviating long or frequently used words can save time when writing in the lab notebook, but in any case that they are used, they must be clearly defined in this section. Even abbreviations that may seem obvious, such as 't' for 'time' should be explained here to avoid any possibility of confusion. When using abbreviations, ensure that no abbreviation is ever defined more than once. For example, 't' cannot be used to mean 'time' in some cases and 'temperature' in others. Writing on the backs of pages is acceptable in this section.
+
+
+\section{Year}
+
+The fifth page of the lab notebook should contain the year the notebook was started in. This is the only information that should appear on this page.
+
+\section{Notebook Entries}
+
+Each notebook entry should start with the date in the format YYYY/MM/DD. Below the date, any necessary information can be recorded neatly and clearly on the lines in the notebook. If a large amount of space in the notebook is left blank, there should be a note near the space indicating that it was intentional. In this section of the notebook, the backs of the pages should not be written on. This space is reserved for any comments added at a later time. If an entry continues over onto a new page in the notebook, "Continued" should be written at the top of the new page. At the end of each entry, a horizontal line should be drawn and signed on. 
+
+\section{List of References}
+\section{Back Cover}	
+				% Generate the 4th paragraph of lorem ipsum random text
+
+
+% --------------------------------------- Section 3 -----------------------------------------
+
+\section{My third section}				% Creates a numbered section
+\subsection{My third subsection}		% Creates a numbered subsection
+
+
+
+
+% --------------------------------------- List of Figures -----------------------------------------
+
+\newpage							% Makes a new page
+
+					% Places a list of figures
+
+\end{document}  
